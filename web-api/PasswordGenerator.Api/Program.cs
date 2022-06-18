@@ -1,3 +1,4 @@
+using PasswordGenerator.Api.Middlewares;
 using PasswordGenerator.Application;
 using PasswordGenerator.Infrastructure;
 
@@ -19,5 +20,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseMiddleware<ValidationErrorHandlerMiddleware>();
 
 app.Run();
