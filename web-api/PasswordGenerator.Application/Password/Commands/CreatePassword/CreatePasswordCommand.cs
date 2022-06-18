@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using System.ComponentModel.DataAnnotations;
 
 namespace PasswordGenerator.Application.Password.Commands.CreatePassword;
 
-public record struct CreatePasswordCommand: IRequest<CreatePasswordResponse>
+public record CreatePasswordCommand: IRequest<CreatePasswordResponse>
 {
+    [Required]
     public string UserId { get; set; }
 
     public CreatePasswordCommand(string userId)
