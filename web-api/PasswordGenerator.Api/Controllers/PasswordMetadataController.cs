@@ -5,11 +5,11 @@ namespace PasswordGenerator.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class PasswordMetadataController : ControllerBase
 {
     private readonly IPasswordMetadataProvider _passwordMetadataProvider;
 
-    public WeatherForecastController(IPasswordMetadataProvider passwordMetadataProvider)
+    public PasswordMetadataController(IPasswordMetadataProvider passwordMetadataProvider)
     {
         _passwordMetadataProvider = passwordMetadataProvider;
     }
