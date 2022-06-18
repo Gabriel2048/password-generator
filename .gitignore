@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+/.vs
+/web-api/PasswordGenerator.Api/bin/Debug/net6.0
+/web-api/PasswordGenerator.Api/obj
+/web-api/PasswordGenerator.Api/.vs/PasswordGenerator.Api
