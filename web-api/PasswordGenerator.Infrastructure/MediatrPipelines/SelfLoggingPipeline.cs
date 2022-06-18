@@ -4,6 +4,11 @@ using System.Diagnostics;
 
 namespace PasswordGenerator.Infrastructure.MediatrPipelines;
 
+/// <summary>
+/// A Mediatr request pipeline that logs beofre and after completing a request.
+/// </summary>
+/// <typeparam name="TRequest"></typeparam>
+/// <typeparam name="TResponse"></typeparam>
 internal class SelfLoggingPipeline<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {
     private readonly ILogger<TRequest> _logger;
