@@ -106,3 +106,8 @@ dist
 /web-api/PasswordGenerator.Api/bin/Debug/net6.0
 /web-api/PasswordGenerator.Api/obj
 /web-api/PasswordGenerator.Api/.vs/PasswordGenerator.Api
+/web-api/PasswordGenerator.Api/.vs/ProjectEvaluation
+/web-api/PasswordGenerator.Application/bin/Debug/net6.0
+/web-api/PasswordGenerator.Application/obj
+/web-api/PasswordGenerator.Infrastructure/bin/Debug/net6.0
+/web-api/PasswordGenerator.Infrastructure/obj
