@@ -7,11 +7,11 @@ namespace PasswordGenerator.Api.Middlewares;
 /// <summary>
 /// A middleware that catches validation exceptions and creates a 400 Bad Request response with the error message.
 /// </summary>
-public class ValidationErrorHandlerMiddleware
+public class ValidationErrorMiddleware
 {
     private readonly RequestDelegate _next;
 
-    public ValidationErrorHandlerMiddleware(RequestDelegate next)
+    public ValidationErrorMiddleware(RequestDelegate next)
     {
         _next = next;
     }

@@ -21,6 +21,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseMiddleware<ValidationErrorHandlerMiddleware>();
+app.UseMiddleware<ValidationErrorMiddleware>();
 
 app.Run();
