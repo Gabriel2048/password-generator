@@ -12,8 +12,6 @@
     "PasswordGenerator.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "passwordmetadata",
       "applicationUrl": "https://localhost:7035;http://localhost:5035",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
@@ -21,8 +19,6 @@
     },
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "passwordmetadata",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
