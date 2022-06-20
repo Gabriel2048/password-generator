@@ -1,6 +1,6 @@
-﻿using MediatR;
-using System.Reflection;
+﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
+using MediatR;
 
 namespace PasswordGenerator.Application;
 

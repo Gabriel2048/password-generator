@@ -1,5 +1,5 @@
-﻿using MediatR.Pipeline;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using MediatR.Pipeline;
 
 namespace PasswordGenerator.Infrastructure.MediatrPipelines;
 

@@ -12,16 +12,11 @@ internal class FileStoragePasswordRepository : IPasswordRepository
         _fileStorageMutator = fileStorageMutator;
     }
 
-    public Task AddPassword(UserPassword userPassword)
+    public Task AddPasswordAsync(UserPassword userPassword)
     {
         return _fileStorageMutator.MutateFile(async (fileMutator) =>
         {
             await JsonSerializer.SerializeAsync(fileMutator.BaseStream, userPassword);
         });
-    }
-
-    public Task DeleteForUser(string userId)
-    {
-        throw new NotImplementedException();
     }
 }

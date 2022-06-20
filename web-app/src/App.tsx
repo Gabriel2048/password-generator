@@ -1,9 +1,9 @@
 import { FunctionComponent } from 'react'
-import { Form } from './screens/main/form';
+import { CreatePasswordForm } from './screens/main/createPasswordForm';
 
 export const App: FunctionComponent = () => {
   return (
-    <Form/>
+    <CreatePasswordForm/>
   );
 }
 

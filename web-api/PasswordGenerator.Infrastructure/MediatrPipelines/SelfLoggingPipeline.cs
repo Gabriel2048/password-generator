@@ -1,7 +1,7 @@
-﻿using MediatR;
-using Microsoft.Extensions.Logging;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
+using Microsoft.Extensions.Logging;
+using MediatR;
 
 namespace PasswordGenerator.Infrastructure.MediatrPipelines;
 

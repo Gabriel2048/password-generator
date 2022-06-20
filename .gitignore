@@ -111,3 +111,5 @@ dist
 /web-api/PasswordGenerator.Infrastructure/obj
 /web-api/PasswordGenerator.Api/PasswordGenerator.Api.csproj.user
 /web-api/PasswordGenerator.Api/FakeDb.txt
+/web-api/Test.Unit/bin/Debug/net6.0
+/web-api/Test.Unit/obj

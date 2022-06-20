@@ -1,5 +1,5 @@
-﻿using MediatR;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using MediatR;
 
 namespace PasswordGenerator.Application.Password.Commands.CreatePassword;
 

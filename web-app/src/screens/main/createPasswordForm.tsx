@@ -3,7 +3,7 @@ import { useTimer } from './useTimer'
 import { usePasswordApi } from '../../api/password/usePasswordApi';
 import './form.css';
 
-export const Form: FunctionComponent = () => {
+export const CreatePasswordForm: FunctionComponent = () => {
     const { start: startTimer, time } = useTimer();
 
     const idRef = useRef<HTMLInputElement>(null);
