@@ -5,7 +5,8 @@ using System.Text.Json;
 namespace PasswordGenerator.Api.Middlewares;
 
 /// <summary>
-/// A middleware that catches validation exceptions and creates a 400 Bad Request response with the error message.
+/// A middleware that catches validation exceptions and creates a <see cref="HttpStatusCode.BadRequest"/> 
+/// with the approrpiate error message.
 /// </summary>
 public class ValidationErrorMiddleware
 {
