@@ -28,7 +28,6 @@ export const CreatePasswordForm: FunctionComponent = () => {
     return (
         <div className='fill-screen'>
             <form onSubmit={handleSubmit}>
-                <div>time {time}</div>
                 <div>
                     <label>User Id </label>
                     <input inputMode='text' type='text' ref={idRef}></input>
@@ -38,7 +37,10 @@ export const CreatePasswordForm: FunctionComponent = () => {
             </form>
             {createdPassword &&
                 <div>
-                    <h3>password: {createdPassword}</h3>
+                    <div>time {time}</div>
+                    <div>
+                        <h3>password: {createdPassword}</h3>
+                    </div>
                 </div>
             }
         </div>
