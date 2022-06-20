@@ -15,7 +15,7 @@ export const usePasswordApi = () => {
             body: JSON.stringify(userId),
         });
 
-        if (response.status != 200) {
+        if (response.status !== 200) {
             throw new Error(`Failed to create password for user ${userId}`);
         }
 

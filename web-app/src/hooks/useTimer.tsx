@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 
 const oneSecond = 1000;
-export const useTimer = () => {
+
+export type OnTimerExpiredCallback = () => void;
+
+export const useTimer = (onTimerExpired?: OnTimerExpiredCallback) => {
     const [time, setTime] = useState<number>(0);
     const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
     useEffect(() => {
         if (time === 0) {
+            onTimerExpired?.();
             clearInterval(intervalId);
         }
-    }, [time]);
+    }, [time, intervalId, onTimerExpired]);
 
     const resetTimerIfStarted = (seconds: number) => {
         if (intervalId != null) {

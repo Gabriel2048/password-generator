@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react'
-import { CreatePasswordForm } from './screens/main/createPasswordForm';
+import { CreatePasswordForm } from './components/createPasswordForm/createPasswordForm';
 
 export const App: FunctionComponent = () => {
   return (
