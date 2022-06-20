@@ -9,8 +9,8 @@ export const useTimer = (onTimerExpired?: OnTimerExpiredCallback) => {
     const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
     useEffect(() => {
         if (time === 0) {
-            onTimerExpired?.();
             clearInterval(intervalId);
+            onTimerExpired?.();
         }
     }, [time, intervalId, onTimerExpired]);
 
