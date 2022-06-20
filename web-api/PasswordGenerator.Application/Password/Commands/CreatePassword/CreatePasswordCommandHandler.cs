@@ -16,7 +16,7 @@ internal class CreatePasswordCommandHandler : IRequestHandler<CreatePasswordComm
     public async Task<CreatePasswordResponse> Handle(CreatePasswordCommand request, CancellationToken cancellationToken)
     {
         var password = Guid.NewGuid().ToString();
-        var createdAt = DateTime.UtcNow;
+        var createdAt = DateTimeOffset.UtcNow;
 
         var userPassword = new UserPassword(request.UserId, password, createdAt);
 

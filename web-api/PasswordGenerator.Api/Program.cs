@@ -10,10 +10,15 @@ builder.Services.AddControllers();
 builder.Services.AddInfrastructure();
 builder.Services.AddApplication();
 builder.Services.AddLogging(c => c.AddConsole());
-
+builder.Services.AddCors(p => p.AddPolicy("local", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+app.UseCors("local");
 
 app.UseHttpsRedirection();
 
