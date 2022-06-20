@@ -26,11 +26,9 @@ public class ValidationErrorMiddleware
         catch (ValidationException error)
         {
             var response = context.Response;
+
             response.ContentType = "application/json";
-
-
             response.StatusCode = (int)HttpStatusCode.BadRequest;
-
 
             var result = JsonSerializer.Serialize(new { message = error.Message });
             await response.WriteAsync(result);
